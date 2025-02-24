@@ -1,0 +1,3 @@
+# Elixir List Modification During Enum.each
+
+This repository demonstrates a common issue in Elixir when attempting to modify a list while iterating over it using `Enum.each`.  The provided code shows the unexpected behavior and the corrected solution.  The problem arises because `Enum.each` iterates over a copy of the list, and changes made inside the loop don't affect the original list. The solution provides a corrected method using `Enum.reduce`.
